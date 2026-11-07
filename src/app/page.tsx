@@ -2,48 +2,114 @@ import React from "react";
 import Header from "@/components/Header";
 import Image from "next/image";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { Car } from "lucide-react";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
+
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col items-center text-center">
-        <div className="w-screen min-h-screen md:h-screen flex flex-col items-center text-center p-20">
-          <Image
-            src="/orcasat.png"
-            alt="ORCASat"
-            className="w-96 md:w-1/2 h-auto"
-            width={1920}
-            height={1080}
-            priority // optional: ensures image loads quickly for hero section
-          />
-          <div>
-            <h1 className="text-4xl font-bold">Island born, space bound.</h1>
-            <h2 className="text-2xl mt-10">
-              Welcome to University of Victoria Satellite Design
-            </h2>
-            <p className="mt-4">
-              UVSD brings together passionate students from across all
-              disciplines to design, build, and launch innovative micro
-              satellites. Our club provides hands-on experience in aerospace
-              engineering, systems design, and project management—skills that
-              often cannot be found in the classroom. From flagship missions
-              like ORCASat and MarmotSat to experimental projects, we push the
-              boundaries of student-led space innovation while fostering a
-              collaborative and inclusive environment. Whether you’re a seasoned
-              engineer or just starting out, UVSD offers opportunities to
-              contribute to real-world space missions and make an impact that
-              reaches beyond our campus. Get involved with UVSD and help shape
-              the future of student-led space technologies.
+      <main className="flex flex-col items-center text-center ">
+        <div className="bg-[url('/ORCASat-Hero-Image.jpg')] bg-cover bg-center bg-no-repeat relative overflow-hidden w-screen h-screen text-foreground flex flex-col justify-start items-center pt-[15vh] md:pt-[20vh] md:px-60">
+          <div className="z-10 w-screen">
+            <p className="text-4xl sm:text-5xl md:text-7xl text-white font-extrabold py-5 mx-20 border-b border-uvic-dark-blue inline-block">
+              UVic Satellite Design
+            </p>
+            <p className="text-2xl sm:text-3xl md:text-4xl text-white font-bold py-5 mx-20 inline-block">
+              Student Space Technologies at the University of Victoria
             </p>
           </div>
         </div>
-        <div className="w-screen h-screen bg-foreground text-background flex flex-col justify-center">
-          ORCASat
+        <div
+          className="bg-[url('/MARMOTSat-Homepage.jpg')]
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              MARMOTSat
+            </h1>
+          </div>
         </div>
-        <div className="w-screen h-screen bg-background text-foreground flex flex-col justify-center">
-          MARMOTSat
+        <div
+          className="bg-[url('/ORCASat-Homepage.jpg')]
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen md:h-screen 
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              ORCASat
+            </h1>
+          </div>
         </div>
-        <div className="w-screen h-screen bg-foreground text-background flex flex-col justify-center">
-          SPONSORS
+        <div
+          className="bg-[url('/ORCASat-Homepage.jpg')]
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen md:h-screen 
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              DOOMBalloon
+            </h1>
+          </div>
+        </div>
+        <div
+          className="bg-[url('/ORCASat-Homepage.jpg')] 
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen md:h-screen 
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              Ground Stations
+            </h1>
+          </div>
+        </div>
+        <div
+          className="bg-[url('/ORCASat-Homepage.jpg')] bg-[length:100%_auto] 
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen md:h-screen 
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              Other Projects
+            </h1>
+          </div>
+        </div>
+        <div
+          className="bg-[url('/ORCASat-Homepage.jpg')] bg-[length:100%_auto] 
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen md:h-screen 
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              Sponsors and Donations
+            </h1>
+          </div>
+        </div>
+        <div
+          className="bg-[url('/ORCASat-Homepage.jpg')] bg-[length:100%_auto] 
+        bg-cover bg-center bg-no-repeat relative w-screen h-screen min-h-screen md:h-screen 
+        flex flex-col items-center text-center p-20"
+        >
+          {/* <div className="absolute inset-0 bg-gradient-to-b from-background via-background/50 to-destructive -z-10" /> */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl text-uvic-dark-blue font-bold">
+              Join UVSD
+            </h1>
+          </div>
         </div>
       </main>
     </>

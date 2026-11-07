@@ -12,6 +12,37 @@ export default function FacilitiesPage() {
         where students can explore their passion for aerospace engineering and
         contribute to cutting-edge space technology.
       </p>
+      <div className="w-full border-t border-accent mt-10">
+        <p className="text-2xl font-bold mt-10 ">Clubroom</p>
+        <p className="mt-4 text-lg">
+          The main gathering space for the satellite club, used for meetings,
+          collaboration, and project planning in a relaxed, team-oriented
+          environment.{" "}
+        </p>
+      </div>
+      <div className="w-full border-t border-accent mt-10">
+        <p className="text-2xl font-bold mt-10">Proplab</p>
+        <p className="mt-4 text-lg">
+          A hands-on workspace equipped for mechanical and electrical
+          fabrication, where members prototype, assemble, and test satellite
+          hardware and related systems.{" "}
+        </p>
+      </div>
+      <div className="w-full border-t border-accent mt-10">
+        <p className="text-2xl font-bold mt-10">Antennas</p>
+        <p className="mt-4 text-lg">
+          The ground station area housing communication equipment and antenna
+          arrays, used for tracking, receiving, and transmitting data to
+          satellites in orbit.{" "}
+        </p>
+      </div>
+      <div className="w-full border-t border-accent mt-10">
+        <p className="text-2xl font-bold mt-10">Clean Room</p>
+        <p className="mt-4 text-lg">
+          A controlled environment designed to minimize contamination, used for
+          the final assembly and integration of sensitive satellite components.{" "}
+        </p>
+      </div>
     </main>
   );
 }

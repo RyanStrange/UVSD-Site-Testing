@@ -1,16 +1,22 @@
 export default function ORCASatPage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-10 text-center">
+    <main className="flex flex-col items-center justify-center min-h-screen p-10 md:p-30 text-center">
       <h1 className="text-4xl font-bold">ORCASat</h1>
       <p className="mt-4 text-lg">
-        ORCASat is our flagship satellite project, designed and built by
-        students at the University of Victoria. This micro satellite aims to
-        demonstrate advanced technologies in space, including innovative
-        communication systems and autonomous operations. ORCASat represents our
-        commitment to hands-on learning and cutting-edge research in aerospace
-        engineering. Through this project, we provide students with invaluable
-        experience in satellite design, construction, and mission planning,
-        preparing them for future careers in the space industry.
+        The OPTICAL REFERENCE CALIBRATION SATELLITE (ORCASat), was the
+        University of Victoria's contribution to the Canadian CubeSat Project.
+        It was a 2U CubeSat designed and build by students which launched on the
+        26th of November 2022. ORCASat was operated from December 29th, 2022 to
+        July 7th, 2023, when it burned up upon reentry into the atmosphere.
+      </p>
+      <p className="mt-4 text-2xl">Mission</p>
+      <p className="mt-2 text-lg">
+        1. Provide a reference light source from orbit to calibrate ground-based
+        optical observatories.
+      </p>
+      <p className="mt-2 text-lg">
+        2. Train the next generation of Canadian space engineers and
+        technologists.
       </p>
     </main>
   );
