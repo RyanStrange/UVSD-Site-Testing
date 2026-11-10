@@ -37,17 +37,17 @@ export default function HeroSection() {
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-8 pt-32 sm:px-10 sm:pb-32 lg:px-16">
         <div className="max-w-4xl">
-          {/* <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">
             University of Victoria
-          </p> */}
+          </p>
 
           <h1 className="max-w-4xl text-5xl font-bold tracking-tight text-white sm:text-6xl ">
             UVic Satellite Design
           </h1>
 
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
+          {/* <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 sm:text-xl">
             Student Space Technologies at the University of Victoria.
-          </p>
+          </p> */}
 
           <div className="mt-10 flex flex-wrap gap-4">
             {heroLinks.map((link) => (
@@ -68,13 +68,13 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <a
+      {/* <a
         href="#missions"
         aria-label="Scroll to missions"
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-white/70 transition hover:text-white"
+        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-white/70 transition hover:text-white hidden md:block"
       >
         <ArrowDown className="animate-bounce" size={24} />
-      </a>
+      </a> */}
     </section>
   );
 }

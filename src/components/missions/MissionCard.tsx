@@ -45,7 +45,7 @@ export function MissionCard({ item, href }: MissionCardProps) {
   );
 
   const classes =
-    "group block overflow-hidden border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-slate-950 rounded-2xl sm:rounded-3xl";
+    "group block overflow-hidden border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-xl dark:border-white/10 dark:bg-slate-950 rounded-xl";
 
   return href ? (
     <Link href={href} className={classes}>
