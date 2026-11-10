@@ -167,3 +167,19 @@
     overflow-x: hidden;
   }
 }
+
+@keyframes hero-zoom {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-background {
+    animation: none !important;
+  }
+}
