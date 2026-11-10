@@ -12,10 +12,14 @@ export function MissionCard({ item, href }: MissionCardProps) {
     <>
       <div className="aspect-[16/10] overflow-hidden">
         <MissionImage
-          src={"heroImage" in item ? item.heroImage : item.image?.src}
+          src={
+            "overview" in item
+              ? (item.heroImage ?? item.overview.image?.src)
+              : item.image?.src
+          }
           alt={
-            "heroImage" in item
-              ? `${item.title} mission`
+            "overview" in item
+              ? (item.overview.image?.alt ?? `${item.title} mission`)
               : (item.image?.alt ?? item.title)
           }
           className="transition duration-500 group-hover:scale-105"

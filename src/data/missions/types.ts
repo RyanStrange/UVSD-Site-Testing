@@ -41,3 +41,14 @@ export interface PastProject {
   image?: MissionImage;
   status?: string;
 }
+
+src={
+  "overview" in item
+    ? item.heroImage ?? item.overview.image?.src
+    : item.image?.src
+}
+alt={
+  "overview" in item
+    ? item.overview.image?.alt ?? `${item.title} mission`
+    : item.image?.alt ?? item.title
+}

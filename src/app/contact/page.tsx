@@ -66,9 +66,9 @@ export default function ContactPage() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            Whether you're interested in joining the team, learning about our
-            projects, or exploring a potential partnership, we'd love to hear
-            from you.
+            Whether you&apos;re interested in joining the team, learning about
+            our projects, or exploring a potential partnership, we&apos;d love
+            to hear from you.
           </p>
         </div>
       </section>

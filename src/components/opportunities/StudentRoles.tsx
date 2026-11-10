@@ -19,9 +19,9 @@ export default function StudentRoles({ roles }: Props) {
           <h2 className="text-3xl font-bold md:text-5xl">Find Your Team</h2>
 
           <p className="text-lg text-muted-foreground">
-            There are many ways to contribute to UVSD. Whether you're interested
-            in engineering, software, research, or outreach, there's a place for
-            you.
+            There are many ways to contribute to UVSD. Whether you&apos;re
+            interested in engineering, software, research, or outreach,
+            there&apos;s a place for you.
           </p>
         </div>
 
@@ -32,8 +32,8 @@ export default function StudentRoles({ roles }: Props) {
         </div>
 
         <p className="text-center text-sm text-muted-foreground">
-          You don't need to be an expert to get started. We're here to learn and
-          build together.
+          You don&apos;t need to be an expert to get started. We&apos;re here to
+          learn and build together.
         </p>
       </div>
     </section>

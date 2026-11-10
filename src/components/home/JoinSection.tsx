@@ -23,7 +23,7 @@ export default function JoinSection() {
           </h2>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-white/70">
-            You don't need to be an aerospace expert to get involved. Join
+            You don&apos;t need to be an aerospace expert to get involved. Join
             students from across the University of Victoria and build the
             skills, experience, and technology that make space exploration
             possible.
