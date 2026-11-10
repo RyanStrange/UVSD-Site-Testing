@@ -7,7 +7,10 @@ interface AboutOverviewProps {
 
 export function AboutOverview({ overview }: AboutOverviewProps) {
   return (
-    <section id="about-overview" className="px-6 py-24 md:px-12 lg:px-20">
+    <section
+      id="about-overview"
+      className="px-6 py-24 md:px-12 lg:px-20 bg-uvic-dark-blue"
+    >
       <div className="mx-auto max-w-7xl">
         <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
           {overview.title}

@@ -9,7 +9,7 @@ export default function StudentRoles({ roles }: Props) {
   const sortedRoles = [...roles].sort((a, b) => a.order - b.order);
 
   return (
-    <section id="roles" className="scroll-mt-24 py-24">
+    <section id="roles" className="scroll-mt-24 py-24 bg-uvic-dark-blue">
       <div className="container mx-auto space-y-12 px-6">
         <div className="max-w-2xl space-y-4">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">

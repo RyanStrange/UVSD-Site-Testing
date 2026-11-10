@@ -7,7 +7,10 @@ interface MissionOverviewProps {
 
 export function MissionOverview({ overview }: MissionOverviewProps) {
   return (
-    <section id="mission-overview" className="scroll-mt-20 px-6 py-20 md:px-12 md:py-28 lg:px-20">
+    <section
+      id="mission-overview"
+      className="scroll-mt-20 px-6 py-20 md:px-12 md:py-28 lg:px-20 bg-uvic-dark-blue"
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2 md:gap-16">
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700 dark:text-sky-400">
@@ -24,8 +27,16 @@ export function MissionOverview({ overview }: MissionOverviewProps) {
           {overview.externalLink && (
             <a
               href={overview.externalLink.url}
-              target={overview.externalLink.url.startsWith("http") ? "_blank" : undefined}
-              rel={overview.externalLink.url.startsWith("http") ? "noreferrer" : undefined}
+              target={
+                overview.externalLink.url.startsWith("http")
+                  ? "_blank"
+                  : undefined
+              }
+              rel={
+                overview.externalLink.url.startsWith("http")
+                  ? "noreferrer"
+                  : undefined
+              }
               className="mt-8 inline-flex items-center gap-2 border-b border-current pb-1 text-sm font-semibold transition hover:text-sky-700 dark:hover:text-sky-400"
             >
               {overview.externalLink.label} <span aria-hidden="true">↗</span>

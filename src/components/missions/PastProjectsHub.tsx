@@ -14,13 +14,13 @@ export function PastProjectsHub() {
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explore
-            projects, experiments, and technical work from across the history
-            of UVSD.
+            projects, experiments, and technical work from across the history of
+            UVSD.
           </p>
         </div>
       </section>
 
-      <section className="px-6 py-20 md:px-12 lg:px-20">
+      <section className="px-6 py-20 md:px-12 lg:px-20 bg-uvic-dark-blue">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10">
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">

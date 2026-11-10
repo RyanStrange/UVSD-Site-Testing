@@ -9,7 +9,7 @@ export default function Pathways({ coOp, research }: Props) {
   const pathways = [coOp, research];
 
   return (
-    <section id="pathways" className="scroll-mt-24 py-24">
+    <section id="pathways" className="scroll-mt-24 py-24 bg-uvic-dark-blue">
       <div className="container mx-auto space-y-12 px-6">
         <div className="max-w-2xl space-y-4">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">

@@ -18,12 +18,14 @@ export function MissionGallery({ images }: MissionGalleryProps) {
     if (!track) return;
 
     const firstCard = track.querySelector<HTMLElement>("[data-gallery-card]");
-    const distance = firstCard ? firstCard.offsetWidth + 24 : track.clientWidth * 0.8;
+    const distance = firstCard
+      ? firstCard.offsetWidth + 24
+      : track.clientWidth * 0.8;
     track.scrollBy({ left: direction * distance, behavior: "smooth" });
   };
 
   return (
-    <section className="overflow-hidden px-6 py-20 md:px-12 md:py-28 lg:px-20">
+    <section className="overflow-hidden px-6 py-20 md:px-12 md:py-28 lg:px-20 bg-uvic-dark-blue">
       <div className="mx-auto max-w-7xl">
         <div className="mb-9 flex items-end justify-between gap-6">
           <div>

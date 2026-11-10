@@ -22,7 +22,7 @@ export default function MeetingInfo({ data }: Props) {
   ];
 
   return (
-    <section id="meetings" className="scroll-mt-24 py-24">
+    <section id="meetings" className="scroll-mt-24 py-24 bg-uvic-dark-blue">
       <div className="container mx-auto px-6">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div className="space-y-5">
