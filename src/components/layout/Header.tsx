@@ -6,7 +6,7 @@ import { MobileNav } from "./MobileNav";
 
 export default function Header() {
   return (
-    <header className="fixed top-2 left-2 z-50 flex items-center gap-2">
+    <header className="w-full fixed z-50 flex items-stretch">
       <Link href="/">
         <Image
           src="/uvsd-logo.svg"

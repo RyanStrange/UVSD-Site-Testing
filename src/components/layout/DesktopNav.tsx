@@ -12,13 +12,16 @@ import {
 
 export function DesktopNav() {
   return (
-    <NavigationMenu viewport={false}>
-      <NavigationMenuList className="font-extrabold gap-3 text-uvic-dark-blue bg-uvic-yellow rounded-md hidden md:flex items-center">
+    <NavigationMenu
+      viewport={false}
+      className="hidden md:flex w-full max-w-none"
+    >
+      <NavigationMenuList className="w-full font-extrabold gap-3 text-white bg-uvic-dark-blue/50 backdrop-blur-md px-8 py-2 justify-between rounded-none">
         {navigation.map((item) => (
           <NavigationMenuItem key={item.title}>
             {item.children ? (
               <>
-                <NavigationMenuTrigger className="font-extrabold bg-uvic-yellow">
+                <NavigationMenuTrigger className="font-extrabold bg-transparent">
                   {item.title}
                 </NavigationMenuTrigger>
 

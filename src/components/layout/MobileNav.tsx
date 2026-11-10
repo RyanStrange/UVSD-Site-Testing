@@ -43,7 +43,7 @@ export function MobileNav() {
         }
       }}
     >
-      <SheetTrigger className="md:hidden fixed top-2 right-2 z-50 bg-uvic-yellow text-uvic-dark-blue p-2 rounded-md border border-uvic-dark-blue">
+      <SheetTrigger className="md:hidden fixed top-2 right-2 z-50 bg-uvic-dark-blue text-white p-2 rounded-md border border-uvic-dark-blue">
         <Menu size={28} />
       </SheetTrigger>
 
